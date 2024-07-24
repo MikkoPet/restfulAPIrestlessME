@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apicashon", "apicashon\apicashon.csproj", "{24434597-4C45-422F-8ED4-1AB3675AF1AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24434597-4C45-422F-8ED4-1AB3675AF1AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24434597-4C45-422F-8ED4-1AB3675AF1AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24434597-4C45-422F-8ED4-1AB3675AF1AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24434597-4C45-422F-8ED4-1AB3675AF1AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE2ADEB8-5324-4325-ABBA-49396583FB6E}
+	EndGlobalSection
+EndGlobal

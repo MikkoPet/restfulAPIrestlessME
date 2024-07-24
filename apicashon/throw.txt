@@ -1,0 +1,43 @@
+﻿public static void Get(string req)
+        {
+            MySqlCommand command = new MySqlCommand(req, _connection);
+
+            MySqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Console.WriteLine(reader[0]);
+            }
+        }
+
+        public static void getProdAndUnit(string req)
+        {
+            MySqlCommand command = new MySqlCommand(req, _connection);
+            MySqlDataReader reader = command.ExecuteReader();
+
+            List<Production> output = new List<Production>();
+
+            while (reader.Read())
+            {
+                Console.WriteLine("prod ID: " + reader[0] + ", name: " + reader[1] + ", units: " + reader[2]);
+
+                output.Add(new Production(int.Parse(reader[0]), reader[1], reader[2]));
+            }
+        }
+
+        public static void getParcelleById(int inputId)
+        {
+            string req = "SELECT * FROM Parcelle WHERE id_production = @id_production";
+            int id = inputId;
+
+            MySqlCommand command = new MySqlCommand(req, _connection);
+            command.Parameters.AddWithValue("@id_parcelle", id);
+
+            MySqlDataReader reader = command.ExecuteReader();
+
+            while(reader.Read())
+            {
+                Console.WriteLine("parcelle id: " + reader["id_parcelle"] + ", nom: " + reader["nom_parcelle"]);
+            }
+
+        }
